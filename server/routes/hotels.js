@@ -17,8 +17,11 @@ router.post("/", verifyAdmin, createHotel);
 router.put("/:id", verifyAdmin, updateHotel);
 // DELETE
 router.delete("/:id", verifyAdmin, deleteHotel);
+
 // GET
 router.get("/:id", getHotel);
+
 // GET ALL
 router.get("/", getHotels);
+
 export default router;
